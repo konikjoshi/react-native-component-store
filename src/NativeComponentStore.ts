@@ -3,6 +3,8 @@ import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
   multiply(a: number, b: number): number;
+  Button(): void;
+  Text(): void;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('ComponentStore');
