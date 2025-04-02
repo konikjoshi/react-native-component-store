@@ -1,6 +1,6 @@
 {
   "name": "react-native-component-store",
-  "version": "0.1.0",
+  "version": "1.0.4",
   "description": "� My Custom React Native UI LibraryA powerful React Native UI library with ready-to-use, highly customizable components. Instead of building components from scratch, use our pre-built UI elements designed for seamless integration into your React Native application.✨ Features✅ Reusable Components – Common UI elements like Buttons, Text, Images (FastImage support), Toasts, Dividers, and Headers.✅ Optimized Performance – Built with best practices for smooth and efficient rendering.✅ Highly Customizable – Easily modify styles and behaviors to match your app's design.✅ Developer-Friendly – Simple and flexible API to save development time.� Components IncludedButton – Stylish and responsive buttons with multiple variants.Text – Custom text components with typography presets.FastImage – High-performance image loading with caching support.Toasts – Built-in toast notifications for quick alerts.Divider – Lightweight dividers for structuring layouts.Header – Pre-styled app headers with optional back button and title.And More...��",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -53,7 +53,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/konikjoshi/react-native-component-store.git.git"
+    "url": "git+https://github.com/konikjoshi/react-native-component-store.git"
   },
   "author": "konik <konikjoshi3@gmail.com> (https://github.com/konikjoshi)",
   "license": "MIT",
@@ -87,7 +87,7 @@
     "react-native-builder-bob": "^0.38.3",
     "release-it": "^17.10.0",
     "turbo": "^1.10.7",
-    "typescript": "^5.2.2"
+    "typescript": "5.5.2"
   },
   "peerDependencies": {
     "react": "*",
@@ -177,5 +177,11 @@
     "type": "turbo-module",
     "languages": "kotlin-objc",
     "version": "0.49.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "react-native-linear-gradient": "^2.8.3"
   }
 }
