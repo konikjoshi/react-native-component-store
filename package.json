@@ -1,7 +1,7 @@
 {
   "name": "react-native-component-store",
-  "version": "1.0.4",
-  "description": "� My Custom React Native UI LibraryA powerful React Native UI library with ready-to-use, highly customizable components. Instead of building components from scratch, use our pre-built UI elements designed for seamless integration into your React Native application.✨ Features✅ Reusable Components – Common UI elements like Buttons, Text, Images (FastImage support), Toasts, Dividers, and Headers.✅ Optimized Performance – Built with best practices for smooth and efficient rendering.✅ Highly Customizable – Easily modify styles and behaviors to match your app's design.✅ Developer-Friendly – Simple and flexible API to save development time.� Components IncludedButton – Stylish and responsive buttons with multiple variants.Text – Custom text components with typography presets.FastImage – High-performance image loading with caching support.Toasts – Built-in toast notifications for quick alerts.Divider – Lightweight dividers for structuring layouts.Header – Pre-styled app headers with optional back button and title.And More...��",
+  "version": "1.0.14",
+  "description": "My Custom React Native UI Library A powerful React Native UI library with ready-to-use, highly customizable components. Instead of building components from scratch, use our pre-built UI elements designed for seamless integration into your React Native application.✨ Features✅ Reusable Components – Common UI elements like Buttons, Text, Images (FastImage support), Toasts, Dividers, and Headers.✅ Optimized Performance – Built with best practices for smooth and efficient rendering.✅ Highly Customizable – Easily modify styles and behaviors to match your app's design.✅ Developer-Friendly – Simple and flexible API to save development time.� Components IncludedButton – Stylish and responsive buttons with multiple variants.Text – Custom text components with typography presets.FastImage – High-performance image loading with caching support.Toasts – Built-in toast notifications for quick alerts.Divider – Lightweight dividers for structuring layouts.Header – Pre-styled app headers with optional back button and title.And More...",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -58,9 +58,9 @@
   "author": "konik <konikjoshi3@gmail.com> (https://github.com/konikjoshi)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/konikjoshi/react-native-component-store.git/issues"
+    "url": "https://github.com/konikjoshi/react-native-component-store/issues"
   },
-  "homepage": "https://github.com/konikjoshi/react-native-component-store.git#readme",
+  "homepage": "https://github.com/konikjoshi/react-native-component-store/blob/main/README.md",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -182,6 +182,7 @@
     "example": "example"
   },
   "dependencies": {
+    "react-native-fast-image": "^8.6.3",
     "react-native-linear-gradient": "^2.8.3"
   }
 }

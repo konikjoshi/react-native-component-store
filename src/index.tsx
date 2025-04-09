@@ -1,8 +1,8 @@
 import ComponentStore from './NativeComponentStore';
-import { Button, Text } from './components';
+import { Button, Text, Divider, Image } from './components';
 
 export function multiply(a: number, b: number): number {
   return ComponentStore.multiply(a, b);
 }
 
-export { Button, Text };
+export { Button, Text, Divider, Image };

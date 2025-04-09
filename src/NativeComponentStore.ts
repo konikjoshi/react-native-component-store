@@ -5,6 +5,8 @@ export interface Spec extends TurboModule {
   multiply(a: number, b: number): number;
   Button(): void;
   Text(): void;
+  Divider(): void;
+  Image(): void;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('ComponentStore');
