@@ -10562,6 +10562,7 @@ __metadata:
     react: 19.0.0
     react-native: 0.78.1
     react-native-builder-bob: ^0.38.3
+    react-native-fast-image: ^8.6.3
     react-native-linear-gradient: ^2.8.3
     release-it: ^17.10.0
     turbo: ^1.10.7
@@ -10571,6 +10572,16 @@ __metadata:
     react-native: "*"
   languageName: unknown
   linkType: soft
+
+"react-native-fast-image@npm:^8.6.3":
+  version: 8.6.3
+  resolution: "react-native-fast-image@npm:8.6.3"
+  peerDependencies:
+    react: ^17 || ^18
+    react-native: ">=0.60.0"
+  checksum: 29289cb6b2eae0983c8922b22e2d9de3be07322bb7991c5def19f95eadefaedb0e308ff0b38cc1d0444e8bd4fe94a7621a99a2d3d9298100bcb60b3144677234
+  languageName: node
+  linkType: hard
 
 "react-native-linear-gradient@npm:^2.8.3":
   version: 2.8.3

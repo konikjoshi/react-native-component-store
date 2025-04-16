@@ -1,8 +1,3 @@
-import ComponentStore from './NativeComponentStore';
-import { Button, Text } from './components';
-
-export function multiply(a: number, b: number): number {
-  return ComponentStore.multiply(a, b);
-}
-
-export { Button, Text };
+// src/index.ts
+export { setLibraryConfig } from './config';
+export * as Components from './components';

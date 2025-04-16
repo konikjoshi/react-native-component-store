@@ -1,20 +1,53 @@
 package com.componentstore
 
+import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.ReactApplicationContext
-import com.facebook.react.module.annotations.ReactModule
+import com.facebook.react.bridge.ReactContextBaseJavaModule
+import com.facebook.react.bridge.ReactMethod
+import com.facebook.react.bridge.WritableMap
+import com.facebook.react.modules.core.DeviceEventManagerModule
 
-@ReactModule(name = ComponentStoreModule.NAME)
 class ComponentStoreModule(reactContext: ReactApplicationContext) :
-  NativeComponentStoreSpec(reactContext) {
+  ReactContextBaseJavaModule(reactContext) {
 
   override fun getName(): String {
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
+  @ReactMethod
+  fun Button() {
+    val event: WritableMap = Arguments.createMap()
+    event.putString("message", "Button pressed from native module")
+    reactApplicationContext
+      .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+      .emit("onNativeButtonPress", event)
+  }
+
+  @ReactMethod
+  fun Text() {
+    val event: WritableMap = Arguments.createMap()
+    event.putString("message", "Text component triggered from native module")
+    reactApplicationContext
+      .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+      .emit("onNativeTextPress", event)
+  }
+
+  @ReactMethod
+  fun Divider() {
+    val event: WritableMap = Arguments.createMap()
+    event.putString("message", "Divider component triggered from native module")
+    reactApplicationContext
+      .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+      .emit("onNativeDividerTrigger", event)
+  }
+
+  @ReactMethod
+  fun Image() {
+    val event: WritableMap = Arguments.createMap()
+    event.putString("message", "Image component triggered from native module")
+    reactApplicationContext
+      .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+      .emit("onNativeImageTrigger", event)
   }
 
   companion object {

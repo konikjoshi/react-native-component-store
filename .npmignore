@@ -1,0 +1,7 @@
+src/
+*.tsx
+*.ts
+__tests__/
+babel.config.js
+tsconfig.json
+example/
