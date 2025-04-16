@@ -1,6 +1,5 @@
+#import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 
-#import "generated/RNComponentStoreSpec/RNComponentStoreSpec.h"
-
-@interface ComponentStore : NSObject <NativeComponentStoreSpec>
-
+@interface ComponentStore : RCTEventEmitter <RCTBridgeModule>
 @end
